@@ -1,6 +1,6 @@
 ## verificando diretorio
 getwd()
-setwd("G:/GitHub/alura/r_io")
+setwd("C:/Users/gabri/Documents/GitHub/alura/r_io")
 
 #### 4. Lendo e Escrevendo arquivos CSV ####
 
@@ -41,13 +41,13 @@ View(dados_2016)
 #dados_2016$DescCNAEPrincipal[10]
 
 ## resolvendo problemas com acentuações (encoding)
-dados_2014 <- read.csv2('dados/reclamacao_2014_.csv', encoding = 'Latin-1',stringsAsFactors = F)
+dados_2014 <- read.csv2('dados/reclamacao_2014.csv', encoding = 'Latin-1',stringsAsFactors = F)
 View(dados_2014)
 
-dados_2015 <- read.csv('dados/reclamacao_2015_.csv',encoding = 'UTF-8',stringsAsFactors = F)
+dados_2015 <- read.csv('dados/reclamacao_2015.csv',encoding = 'UTF-8',stringsAsFactors = F)
 View(dados_2015)
 
-dados_2016 <- fread('dados/reclamacao_2016_.csv',encoding = 'UTF-8')
+dados_2016 <- fread('dados/reclamacao_2016.csv',encoding = 'UTF-8')
 View(dados_2016)
 
 
